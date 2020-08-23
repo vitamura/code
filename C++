@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+	char tamanho;
+do{
+printf("\n Digite o tamanho [G M P] <F para finalizar>");
+	fflush(stdin);
+	
+scanf ("%c",&tamanho);
+while(tamanho!='G'&& tamanho!='M'&& tamanho!='P'&& tamanho!='F')
+{
+	fflush(stdin);
+	printf("\n Digite NOVAMENTE o tamanho [G M P] <F para finalizar>");
+	scanf("&c", &tamanho);
+}
+
+    if (tamanho=='g' || tamanho=='G' )
+	printf("\n www.tamanhog.com.br \n\n");
+else if(tamanho =='m' || tamanho== 'M')
+    printf("\n www.tamanhom.combr \n\n");
+	 else if(tamanho =='p' || tamanho=='P')
+    printf("\n www.tamanhop.com,br \n\n");
+    else 
+    printf("\n Finalizando... \n\n");
+}
+while (tamanho!= 'f' && tamanho!= 'F');
+	 system("pause");
+	 }                  
