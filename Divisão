@@ -1,0 +1,14 @@
+//============================= parte 1 ============================
+// Mostre na tela o resto de uma divisão por 7
+//==================================================================
+#include <stdio.h>
+#include <stdlib.h>
+main ()
+{
+	int i,resto;
+	for (i=10; i <=50 ; i++)
+	{
+		resto = i % 7;
+		printf ("\n Numero %d resto =%d", i, resto);
+	}
+system ("pause");
